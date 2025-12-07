@@ -1,13 +1,13 @@
-Feczkó Illés
+Készítő neve: Feczkó Illés
 
 
-A weboldalam témája egy képzeletbeli bár weboldalának elkészítése. Ez tartalmaz egy kezdőlapot, galériát, itallapot, illetve asztalfoglalási és visszajelzési lehetőséget.
+Weboldalam témája: A weboldalam témája egy képzeletbeli bár weboldalának elkészítése. Ez tartalmaz egy kezdőlapot, galériát, itallapot, illetve asztalfoglalási és visszajelzési lehetőséget.
 
 
+Weboldal URL címe: https://feczkoilles-ai.github.io/Beadando1/html/
 
 
-
-A Javascript kódjaim a 'js' mappában találhatóak, 4 db javascript kódom van.
+A JavaScript kód helye, működése: A Javascript kódjaim a 'js' mappában találhatóak, 4 db javascript kódom van.
 
 
 Az italok.js az itallapon az italok kinagyított megjelenítését, ezt követő kosárba rakásának opcióját, majd bezárását írja le.
@@ -22,6 +22,7 @@ A visszajelzes.js segít visszajelezni a vásárlók elégedettségéről, a meg
 
 
 
+A használt betűtípus: Roboto, például az alap.txt-ben;
+Betűtípus helye: https://fonts.googleapis.com/css2?family=Roboto&display=swap
 
 
-A használt betűtípus: Roboto, például az alap.txt-ben; https://fonts.googleapis.com/css2?family=Roboto&display=swap
