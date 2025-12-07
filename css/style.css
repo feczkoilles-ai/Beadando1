@@ -1,0 +1,1115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    margin-top:90px;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  background-color: #fff; 
+  color: black;
+  margin-top: 0;
+  text-shadow: 1px 1px 2px white;
+}
+.fejlec {
+    background-color:black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 999;
+}
+.fejlec nav ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+    margin-top:12px;
+}
+
+.fejlec nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:0.7em;
+}
+
+
+@media (min-width:600px){
+    .fejlec nav ul {
+        gap:80px;
+        font-size:1.1em;
+    }
+}
+
+
+#fejleclogo{
+    color: white;
+    text-decoration: none;
+}
+
+
+main:before {
+    content: "";
+    display: block;
+    height: 20px;
+}
+
+
+
+.kartyak {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    
+    
+}
+.kartya{
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+    border:2px solid black;
+    border-radius:10px;
+    background-color:rgba(255, 255, 255, 0.7);
+}
+.kartya p{
+    font-size:1.1rem;
+    padding-bottom:10px;
+}
+
+.kartyacim{
+    padding-bottom:16px;
+    font-size:1.3rem;
+}
+
+
+
+.megnyitas{
+    display:block;
+    margin:auto 0px 0px auto;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border:2px solid black;
+    width:100px;
+    border-radius: 10px;
+    padding:10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align:center;
+}
+
+.lablec {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+@media (min-width: 40em) {
+    .tartalom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 40px 40px 40px;
+        gap: 50px;
+    }
+
+    
+
+    .kartyak {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        width: 100%;
+        max-width: 1000px;
+        margin-bottom:50px;
+    }
+    .kartya p {
+        font-size: 1.2rem;
+    }
+    .kartya h3{
+        font-size: 1.5rem;
+    }
+    .kartya .megnyitas{
+        width:120px;
+        font-size:1rem;
+    }
+}
+
+@media (min-width: 60em) {
+    .kartyak {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    
+    }
+    .bemutatkozas {
+        line-height: 35px;
+        font-size:1rem;
+    }
+    .kartya p {
+        font-size: 1.4rem;
+    }
+    .kartya h3{
+        font-size: 1.7rem;
+    }
+    .kartya .megnyitas{
+        width:140px;
+        font-size:1.1rem;
+    }
+    
+    .tartalom {
+        gap: 4px;
+    }
+    .kartya .megnyitas:hover{
+        background-color: rgba(200, 200, 200, 0.75);
+    }
+    
+    #fejleclogo:hover{
+    color:bisque;
+    transition: color 0.3s ease;
+    
+}
+}
+
+
+
+
+
+
+
+
+
+.tartalom{
+    background-image: url("../vizualisresz/barhatter.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0px 20px 20px 20px;
+}
+
+.bemutatkozas{
+    width: 100%;
+    max-width: 1000px;
+    line-height:30px;
+    text-align:justify;
+    padding:20px;
+    color: black;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius:10px;
+    margin-bottom:20px;
+    border: black 2px solid;
+    font-weight: normal;
+}
+.bemutatkozas p{
+    margin-bottom:10px;
+}
+.bemutatkozas h1{
+    font-size:1.2rem;
+    margin-bottom:10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+.itallap{
+    background-image: url("../vizualisresz/barhatter.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.italkep{
+    max-height:50px;
+    width:auto;
+}
+
+
+.uditok, .sorok, .koktelok, .borok{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 1000px;
+}
+
+.uditok h2, .sorok h2, .borok h2, .koktelok h2{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.ital{
+    background-color: white;
+    border:2px solid black;
+    border-radius:10px;
+    padding:20px;
+    width:100%;
+    max-width: 300px;
+    flex: 0 0 100%;
+    max-height:150px;
+    text-align:center;
+    position: relative;
+}
+.italkep{
+    max-height:50px;
+    width:auto;
+}
+
+.italnev{
+    font-size:1.2rem;
+    font-weight:bold;
+    padding:10px 0px;
+}
+.ital p {
+    display: flex;             
+    justify-content: center;    
+    align-items: center;        
+    
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 100px;
+    height: 30px;               
+    
+    margin: 0;                 
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 2px;
+    color: white;
+}
+
+
+@media (min-width: 600px) {
+    .itallap{
+        gap:70px;
+    }
+    .uditok, .sorok, .koktelok, .borok{
+        flex-wrap: wrap;
+    }
+    .ital{
+        flex: 0 0 calc(50% - 10px);
+        width: 45%;
+        max-width: 450px;
+    }
+    .ital h1{
+        font-size: 1rem;
+    }
+    .italnev{
+        font-size: 1rem;
+    }
+    .ital p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .itallap{
+        gap:90px;
+    }
+    .uditok, .sorok, .koktelok, .borok{
+        gap: clamp(20px, 5vw, 60px);
+    }
+    .ital{
+        flex: 0 0 calc(50% - clamp(10px, 2.5vw, 30px));
+        width: 45%;
+        max-width: 500px;
+    }
+    .ital h1{
+        font-size: 1.4rem;
+    }
+    .italnev{
+        font-size:1.6rem;
+    }
+}   
+
+
+
+
+
+#kosar {
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  width: 170px;
+
+  max-height: 300px; 
+  overflow-y: auto;
+
+  background: rgba(0, 0, 0, 0.6); 
+  backdrop-filter: blur(3px);
+
+  color: white;
+  padding: 15px;
+  border-radius: 12px;      
+}
+
+
+#kosar ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#kosar li {
+  margin-bottom: 6px;
+}
+
+#m-gomb {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.m {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    border: black 2px solid;
+}
+
+.m-kontent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 300px;
+    position: relative;
+}
+
+#m-bezaras {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+
+#m-kep-link {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+#m-kep {
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.m {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+
+.m.nyit {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+
+.m-kontent {
+    transform: translateY(-80px) scale(0.95);
+    opacity: 0;
+    transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.m.nyit .m-kontent {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+
+
+
+.visszajelzo-form{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    flex-wrap:nowrap;
+    justify-content:center;
+    gap:20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 1500px;
+}
+
+
+
+
+.visszajelzo-form {
+    width: 100%;
+    max-width: 700px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.visszajelzo-form button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight:bold;
+    color:black;
+    background-color: rgba(255, 255, 255, 0.75);
+    border:2px solid black;
+    border-radius:10px;
+    cursor:pointer;
+}
+.visszajelzo-form #ital {
+    font-size:1rem;
+    padding:10px;
+    border-radius:5px;
+    background-color:#ddd;
+    border:1px solid #ccc;
+}
+
+.visszajelzo-form #ital:hover{
+    background-color: rgba(200, 200, 200, 0.75);
+}
+
+.visszajelzo-form button:hover{
+    background-color: rgba(200, 200, 200, 0.75);
+}
+
+.visszajelzo-form input[type="text"],
+.visszajelzo-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 36px;
+    border-radius: 5px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+#feltetelek{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
+.visszajelzo-form textarea {
+    min-height: 100px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.visszajelzo-form input[type="text"],
+.visszajelzo-form input[type="email"],
+.visszajelzo-form input[type="date"],
+.visszajelzo-form input[type="time"],
+.visszajelzo-form select,
+.visszajelzo-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;         
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.visszajelzo-form input[type="text"]:focus,
+.visszajelzo-form input[type="email"]:focus,
+.visszajelzo-form input[type="date"]:focus,
+.visszajelzo-form input[type="time"]:focus,
+.visszajelzo-form select:focus,
+.visszajelzo-form textarea:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 8px rgba(0,119,204,0.3);
+    outline: none;
+    background-color: #fff;
+}
+
+
+
+#tablazatdoboz{
+    overflow-x:auto;
+    margin-top:20px;
+    border-top:5px solid black;
+    width:100%;
+    padding: 20px 0px;
+}
+
+#visszajelzes-tablazat{
+    width: 100%;
+    max-width: none;
+    border-collapse: collapse;
+    margin: 40px auto;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align:center;
+    border: 2px solid black;
+    display: table;        
+    overflow-x: auto;      
+    white-space: nowrap;   
+    font-size: 1.1rem;     
+    -webkit-overflow-scrolling: touch;
+}
+
+#visszajelzes-tablazat th, #visszajelzes-tablazat td {
+    border: 1px solid black;
+    padding: 6px 6px;
+    font-size:1.1rem;
+    word-break:break-all;
+}
+
+
+
+@media (min-width: 600px) {
+    .visszajelzo-form{
+        gap:30px;
+    }
+    .visszajelzo-form label{
+        font-size:1.5rem;
+    }
+    .visszajelzo-form input[type="text"],
+    .visszajelzo-form input[type="email"],
+    .visszajelzo-form textarea,
+    .visszajelzo-form input[type="range"]{
+        font-size:1.2rem;
+        max-width: 500px;
+    }
+    .visszajelzo-form button{
+        font-size:1.5rem;
+    }
+    #visszajelzes-tablazat {
+        max-width: 700px;
+        display: table;
+        margin: 20px auto;
+        font-size: 0.5rem;
+        padding: 0;
+    }
+    #visszajelzes-tablazat th, #visszajelzes-tablazat td {
+        padding: 10px 12px;
+        font-size:0.5rem;
+    }
+
+    #visszajelzes-tablazat {
+        width: 100%;      
+        max-width: 1000px; 
+    }
+
+    #visszajelzes-tablazat th,
+    #visszajelzes-tablazat td {
+        font-size: 1.4rem; 
+        padding: 10px;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .visszajelzo-form{
+        gap:40px;
+    }
+    .visszajelzo-form label{
+        font-size:1.8rem;
+    }
+    .visszajelzo-form input[type="text"],
+    .visszajelzo-form input[type="email"],
+    .visszajelzo-form textarea,
+    .visszajelzo-form input[type="range"]{
+        font-size:1.4rem;
+    }
+    .visszajelzo-form button{
+        font-size:1.8rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.galleria{
+    padding: 40px 40px 40px 40px;
+    margin-top: 0;
+    column-count: 1;        
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.galleriatartalom{
+    background-image: url("../vizualisresz/barhatter.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galleriatartalom h1{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 1000px;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.galleria{
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
+    max-width: 1000px;
+    text-align:center;
+}
+
+
+
+.galleria img {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+  border-radius: 8px;
+  break-inside: avoid;
+}
+
+
+.galleria img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.galleria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.4); 
+  opacity: 0.9;      
+}
+
+
+
+@media (min-width: 600px) {
+  .galleria{
+    column-count: 2;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .galleria {
+    column-count: 3;
+  }
+}
+
+
+#felugro {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+
+#felugrokep {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+}
+
+
+#kepbezaras {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.alaprajz {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    border: 2px dashed black;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #555;
+}
+
+
+.visszajelzo-form {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.visszajelzo-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.visszajelzo-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.visszajelzo-form label {
+    font-weight: bold;
+}
+
+.visszajelzo-form input[type="text"],
+.visszajelzo-form input[type="number"],
+.visszajelzo-form select,
+.visszajelzo-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.visszajelzo-form button {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.85);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.visszajelzo-form button:hover {
+    background-color: rgba(200,200,200,0.85);
+}
+
+
+
+
+
+
+
+
+
+
+
+.foglalas-tartalom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+
+
+.foglalas-kepek {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.foglalas-kepek img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+@media (min-width: 768px) {
+    .foglalas-kepek {
+        flex-direction: row;
+    }
+    .foglalas-kepek img {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .foglalas-kepek img {
+        width: calc(33.33% - 15px);
+    }
+}
+
+
+.foglalas-form {
+    width: 100%;
+    max-width: 800px;
+    background-color: rgba(255,255,255,0.85);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.foglalas-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.foglalas-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.foglalas-form label {
+    font-weight: bold;
+}
+
+.foglalas-form input[type="text"],
+.foglalas-form input[type="number"],
+.foglalas-form select,
+.foglalas-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+
+.foglalas-form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.foglalas-form button {
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.85);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.foglalas-form button:hover {
+    background-color: rgba(200,200,200,0.85);
+}
+
+.foglalas-kepek {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px 20px;       
+    display: flex;
+    justify-content: center;
+    gap: 40px;                 
+    flex-wrap: wrap;           
+    border-radius: 15px;       
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom:20px; 
+    border: black solid 2px;
+}
+
+.alaprajzok {
+    background-color: #fff;
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;       
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+    max-width: 400px;          
+    width: 100%;              
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alaprajzok:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+
+
+.tartalom aside:not(#kosar) {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .foglalas-form {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .foglalas-tartalom {
+        gap: 40px;
+    }
+    .foglalas-form {
+        padding: 40px;
+    }
+}
+
+
+
+.oldal-navigacio {
+    position: fixed;   
+    top: 120px;             
+    right: 20px;           
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    z-index: 1000;
+    max-width: 220px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+
+.oldal-navigacio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.oldal-navigacio li {
+    margin-bottom: 10px;
+}
+
+
+.oldal-navigacio a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 8px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.oldal-navigacio a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+#elso-alaprajz,
+#masodik-alaprajz,
+#elso-emelet,
+#masodik-emelet {
+    scroll-margin-top: 120px;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .oldal-navigacio {
+        top: 120px;
+        right: 10px;
+        padding: 10px;
+        max-width: 180px;
+        font-size: 0.9rem;
+    }
+}

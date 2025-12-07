@@ -1,0 +1,27 @@
+Feczkó Illés
+
+
+A weboldalam témája egy képzeletbeli bár weboldalának elkészítése. Ez tartalmaz egy kezdőlapot, galériát, itallapot, illetve asztalfoglalási és visszajelzési lehetőséget.
+
+
+
+
+
+A Javascript kódjaim a 'js' mappában találhatóak, 4 db javascript kódom van.
+
+
+Az italok.js az itallapon az italok kinagyított megjelenítését, ezt követő kosárba rakásának opcióját, majd bezárását írja le.
+
+A galleria.js segít a gallériában található képeket megnyitni, kinagyítani, majd bezárni.
+
+A foglalás.js segítségével lehet asztalfoglalást menteni a bárban, korábban még nem lefoglalt asztalokra, a megfelelő űrlap kitöltése után.
+
+A visszajelzes.js segít visszajelezni a vásárlók elégedettségéről, a megfelelően kitöltött űrlap eredményeinek átlagszámítása után táblázatban jelennek meg a visszajelzések, megjegyzések.
+
+
+
+
+
+
+
+A használt betűtípus: Roboto, például az alap.txt-ben; https://fonts.googleapis.com/css2?family=Roboto&display=swap

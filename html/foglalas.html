@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BARvinus - Foglalás</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="icon" href="../vizualisresz/favicon.png" type="image/png">
+    <script src="../js/foglalas.js" defer></script>
+</head>
+<body class="foglalas-oldal">
+    <header class="fejlec">
+            <a href="index.html" id="fejleclogo">BARvinus</a>
+
+            <nav>
+            <ul>
+                <li><a href="itallap.html">Itallap</a></li>
+                <li><a href="galleria.html">Galléria</a></li>
+                <li><a href="foglalas.html">Foglalás</a></li>
+                <li><a href="visszajelzes.html">Visszajelzés</a></li>
+            </ul>
+        </nav>
+	</header>
+
+    <aside class="oldal-navigacio">
+        <nav>
+            <ul>
+                <li><a href="#elso-emelet">1. emelet foglalás</a></li>
+                <li><a href="#masodik-emelet">2. emelet foglalás</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="tartalom">
+
+         <section id="elso-emelet" class="visszajelzo-form">
+            <h1>Foglalás - 1. emelet</h1>
+            <form action="https://httpbin.org/post" onsubmit=" foglalasElkuldese1() " method="POST">
+                <label for="nev1">Név:</label>
+                <input type="text" id="nev1" name="nev1">
+
+                <label for="email1">Email:</label>
+                <input type="email" id="email1" name="email1">
+
+                <label for="datum1">Dátum:</label>
+                <input type="date" id="datum1" name="datum1" placeholder="ÉÉÉÉ-HH-NN">
+
+                <label for="ido1">Időpont:</label>
+                    <select id="ido1" name="ido1">
+                    <option value="00:00">00:00</option>
+                    <option value="00:30">00:30</option>
+                    <option value="01:00">01:00</option>
+                    <option value="01:30">01:30</option>
+                    <option value="02:00">02:00</option>
+                    <option value="02:30">02:30</option>
+                    <option value="03:00">03:00</option>
+                    <option value="03:30">03:30</option>
+                    <option value="04:00">04:00</option>
+                    <option value="04:30">04:30</option>
+                    <option value="05:00">05:00</option>
+                    <option value="05:30">05:30</option>
+                    <option value="06:00">06:00</option>
+                    <option value="06:30">06:30</option>
+                    <option value="07:00">07:00</option>
+                    <option value="07:30">07:30</option>
+                    <option value="08:00">08:00</option>
+                    <option value="08:30">08:30</option>
+                    <option value="09:00">09:00</option>
+                    <option value="09:30">09:30</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="12:30">12:30</option>
+                    <option value="13:00">13:00</option>
+                    <option value="13:30">13:30</option>
+                    <option value="14:00">14:00</option>
+                    <option value="14:30">14:30</option>
+                    <option value="15:00">15:00</option>
+                    <option value="15:30">15:30</option>
+                    <option value="16:00">16:00</option>
+                    <option value="16:30">16:30</option>
+                    <option value="17:00">17:00</option>
+                    <option value="17:30">17:30</option>
+                    <option value="18:00">18:00</option>
+                    <option value="18:30">18:30</option>
+                    <option value="19:00">19:00</option>
+                    <option value="19:30">19:30</option>
+                    <option value="20:00">20:00</option>
+                    <option value="20:30">20:30</option>
+                    <option value="21:00">21:00</option>
+                    <option value="21:30">21:30</option>
+                    <option value="22:00">22:00</option>
+                    <option value="22:30">22:30</option>
+                    <option value="23:00">23:00</option>
+                    <option value="23:30">23:30</option>
+                    </select>
+
+                <label for="asztal1">Asztal száma:</label>
+                    <select id="asztal1" name="asztal1">
+                        <option value="" disabled selected>Válassz asztalt</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                <label>
+                    <input type="checkbox" id="feltetelek1" required>
+                    Elfogadom az Általános Szerződési Feltételeket
+                </label>
+
+                <button type="submit">Foglalás</button>
+            </form>
+        </section>
+
+        <section id="masodik-emelet" class="visszajelzo-form">
+            <h1>Foglalás - 2. emelet</h1>
+            <form action="https://httpbin.org/post" onsubmit="return foglalasElkuldese2()" method="post">
+                <label for="nev2">Név:</label>
+                <input type="text" id="nev2" name="nev2" required>
+
+                <label for="email2">Email:</label>
+                <input type="email" id="email2" name="email2" required>
+
+                <label for="datum2">Dátum:</label>
+                <input type="date" id="datum2" name="datum2" placeholder="ÉÉÉÉ-HH-NN" required>
+
+                <label for="ido2">Időpont:</label>
+                <input type="time" id="ido2" name="ido2" placeholder="HH:MM" step="1800" required>
+
+                <label for="asztal2">Asztal száma:</label>
+                    <select id="asztal2" name="asztal2" required>
+                        <option value="" disabled selected>Válassz asztalt</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                <label>
+                    <input type="checkbox" id="feltetelek2" required>
+                    Elfogadom az Általános Szerződési Feltételeket
+                </label>
+
+                <button type="submit">Foglalás</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+

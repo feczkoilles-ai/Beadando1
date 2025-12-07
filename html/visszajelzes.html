@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BARvinus</title>
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+	<link rel="icon" href="../vizualisresz/favicon.png" type="image/png">
+	<script src="../js/visszajelzes.js" defer></script>
+</head>
+<body>
+	<header class="fejlec">
+            <a href="index.html" id="fejleclogo">BARvinus</a>
+
+
+			<nav>
+            <ul>
+                <li><a href="itallap.html">Itallap</a></li>
+                <li><a href="galleria.html">Galléria</a></li>
+                <li><a href="foglalas.html">Foglalás</a></li>
+                <li><a href="visszajelzes.html">Visszajelzés</a></li>
+            </ul>
+        </nav>
+	</header>
+    <main class="tartalom"> 
+        <div>
+			<form action="https://httpbin.org/post" method="post" class="visszajelzo-form">
+				<label for="felhasznalonev">Felhasználónév:</label>
+				<input type="text"	rows="1" id="felhasznalonev" placeholder="Add meg a felhasználónevedet" maxlength="12" required>
+
+				<label for="boldogsag">Mennyire vagy boldog a szolgáltatásunkkal?</label>
+				<input type="range" min="0" max="10" step="1" value="10" id="boldogsag" class="slider">
+
+				<label for="kiszolgalas">Mennyire vagy elégedett a kiszolgálással?</label>
+				<input type="range" min="0" max="10" step="1" value="10" id="kiszolgalas" class="slider">
+				
+				<label for="koktelok">Mennyire vagy elégedett a koktélokkal?</label>
+				<input type="range" min="0" max="10" step="1" value="10" id="koktelok" class="slider">
+
+				<label for="tisztasag">Mennyire vagy elégedett a tisztasággal?</label>
+				<input type="range" min="0" max="10" step="1" value="10" id="tisztasag" class="slider">
+				<label for="ital">Melyik volt a kedvenc koktélod?</label>
+				<select id="ital" name="ital">
+					<option value="">-- Válassz --</option>
+					<option value="coca-cola">Coca-Cola</option>
+					<option value="sprite">Sprite</option>
+					<option value="fanta">Fanta</option>
+					<option value="asvanyviz">Ásványvíz</option>
+					<option value="heineken">Heineken</option>
+					<option value="dreher">Dreher</option>
+					<option value="borsodi">Borsodi</option>
+					<option value="staropramen">Staropramen</option>
+					<option value="merlot">Merlot</option>
+					<option value="riesling">Riesling</option>
+					<option value="mojito">Mojito</option>
+					<option value="pina-colada">Piña Colada</option>
+					<option value="sex-on-the-beach">Sex on the Beach</option>
+					<option value="cosmopolitan">Cosmopolitan</option>
+				</select>
+
+
+				
+
+				<label for="feltetelek">Elfogadom az adatkezelési feltételeket</label>
+				<input type="checkbox" id="feltetelek" required>
+
+				<label for="megjegyzes">Egyéb megjegyzés:</label>
+				<input type="text"	rows="4" id="megjegyzes" placeholder="Írd ide a megjegyzésedet" maxlength='80'>
+				<button type="button" id="gomb">Küldés</button>
+			</form>
+		</div>
+		<div id="tablazatdoboz">
+		<table id="visszajelzes-tablazat">
+			<thead>
+				<tr>
+					<th>Név</th>
+					<th>Elégedettség</th>
+					<th>Italválasztás</th>
+					<th>Megjegyzés</th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<td>Átlag</td>
+					<td></td>
+				</tr>
+			</tfoot>
+		</table>
+		</div>
+    </main>
+</body>
